@@ -1,3 +1,3 @@
 # 00Examples
 
-First change for test!
+30-Sep-2017 First submit examples to Github!
