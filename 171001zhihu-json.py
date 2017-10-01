@@ -26,7 +26,24 @@ except Exception as e:
 
 ###########################################
 zh_jsn_url = 'https://zhuanlan.zhihu.com/api/recommendations/posts?limit=3&seed=99'
+# zh_jsn_url = 'https://www.zhihu.com/api/v4/members/ke-ren-33-46/activities?limit=20&after_id=1504206499&desktop=True'
+# zh_jsn_url = 'https://zhuanlan.zhihu.com/api/posts/29761037/comments?limit=10&offset=0'
 data=session.get(url=zh_jsn_url, headers=headers).text
-print(data)
-json_str = json.dumps(data,ensure_ascii=False)
+# print(type(data))
+# print(data.text)
+# json_str = json.dumps(data,ensure_ascii=False)
+json_str = json.dumps(data,ensure_ascii=False,indent = 4).encode('gb2312')
 print(json_str)
+
+###########################################
+
+# data = [{"a":"aaa","b":"bbb","c":[1,2,3,(4,5,6)]},33,'tantengvip',True]
+# data2 = json.dumps(data)
+# print(data2)
+# f = open('./tt.txt','a')
+# json.dump(data2,f)
+
+
+###########################################
+s = '\u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8'
+print(s)
