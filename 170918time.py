@@ -17,3 +17,6 @@ print(time.localtime(time.time()))
 print(str(int(time.time()*1000)))
 # 1506403581410
 # 1506475457172
+# 1503553129
+# 1504206494
+print(time.strftime('%Y-%m-%d',time.localtime(1504206494)))
