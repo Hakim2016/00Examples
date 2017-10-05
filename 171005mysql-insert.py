@@ -7,8 +7,8 @@ conn = mysql.connect(host='localhost', user='root', passwd='root', db='testdb', 
 cursor = conn.cursor()
 
 # SQL insert into table employee
-sql = """insert into employee(first_name, last_name, age, sex, imcome)
-         values('Mac', 'Mohan', 20, 'M', 2000)"""
+sql = """insert into employee(first_name, last_name, age, sex, income)
+         values('Hakim', 'He', 20, 'M', 7000)"""
 
 try:
     # execute this sql
