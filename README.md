@@ -28,7 +28,7 @@ then fixed.
 
 Python insert into mysql via pymysql
 insert success, Chinese characters displayed in unreadable code.
-myabe this code "set names gbk" help a lot
+myabe this code "set names gbk" helps a lot
 
 show full columns from employee;
 show create table employee;
