@@ -18,5 +18,18 @@
            `sex` char(2)
         )ENGINE=InnoDB DEFAULT CHARSET=utf8;
      show create table employee;
+
+06-Oct-2017
+COMMAND WINDOW:
 insert into employee(first_name, last_name, age, sex) values('晶晶', 'gtdfdfdfsfddfsdsfs', 24, 'M');
+error 1366 Chinese characters insert error.
+set names gbk;
+then fixed.
+
+Python insert into mysql via pymysql
+insert success, Chinese characters displayed in unreadable code.
+myabe this code "set names gbk" help a lot
+
 show full columns from employee;
+show create table employee;
+alter table employee character set gbk;

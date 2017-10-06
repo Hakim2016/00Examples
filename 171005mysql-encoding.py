@@ -14,7 +14,7 @@ cursor = conn.cursor()
 # SQL insert into table employee
 sql = "insert into employee(first_name, last_name, age, sex) values(%s, %s, %s, 'M')"
 # params = ("晶晶".encode('utf-8'),"何".encode('utf-8'))
-params = ("晶晶".encode('utf-8'),"何", 3)
+params = ("晶晶 san","何", 3)
 # params = ("晶晶".decode('gbk').encode('utf-8'),"何".decode('gbk').encode('utf-8'))
 # "".encode().decode()
 # "晶晶".encode('utf-8')
