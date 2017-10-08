@@ -11,7 +11,7 @@ sys.stdout.write('stdout Hakim2' + '\n')
 
 print('%(language)s has %(number)03d quote types.' % {'language': "Python", "number": 2})
 
-print('%(a)s is happy who has %(b)d hobbies' % {'a':'Hakim', 'b':3})
+print('%(a)s is happy.py who has %(b)d hobbies' % {'a':'Hakim', 'b':3})
 
 percent = 20
 sys.stdout.write("\r%d%%" % percent + ' complete')
