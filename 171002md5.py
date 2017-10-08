@@ -1,6 +1,6 @@
 import hashlib
 
-str = '0513865210hjj'
+str = 'abcdefg'
 str = str.encode('gbk')
 m = hashlib.md5()
 m.update(str)
